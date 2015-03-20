@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Incognito open",
+  "version": "1.0",
+
+  "description": "Opens the current tab in a incognito-tab (or not-incognito if action was triggered in a incognito-window). Re-uses open tabs with the same URL.",
+
+  "author": "Jimi Pirilä <jiripim@gmail.com>",
+
+  "commands": {
+    "invert-mode": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+M"
+      },
+      "description": "Opens the current tab in incognito/normal mode"
+    }
+  },
+
+  "background": {
+    "scripts": ["extension.js"],
+    "persistent": false
+  },
+
+  "permissions": [
+    "tabs"
+  ]
+}
